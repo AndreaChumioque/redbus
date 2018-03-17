@@ -1,11 +1,12 @@
 import React from 'react'
 import  CodePage  from './CodePage'
-import Money from '/.Money'
+import Money from './Money'
+
 
 const Main = () => {
 
   return (
-    <section>
+    <section className='container-fluid'>
       <nav>
         <ul class="nav nav-tabs">
           <li class="nav-item">
@@ -16,9 +17,12 @@ const Main = () => {
           </li>
         </ul>
       </nav>
-      <div>
+      <div className=' flex container_input row border-0 rounded'>
         <CodePage />
         <Money />
+        <div clasName=' align-center subcontainer_input col-4 col-md-4'>
+          <p clasName='border'>Texto</p>
+        </div>
       </div>
     </section>
   )

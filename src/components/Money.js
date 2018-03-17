@@ -6,8 +6,8 @@ const Money = () => {
 
   return (
 
-    <div>
-      <input type="text" />
+    <div className=' align-center subcontainer_input_Money col-4 col-md-4'> 
+      <input className='input-nav money' type="text" />
     </div>
 
   )
