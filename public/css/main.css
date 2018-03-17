@@ -1,0 +1,24 @@
+.container_input{
+  /* background-color: #eee7e7; */
+  margin-top: 2% !important;
+
+}
+.subcontainer_input_CodePage{
+  padding: 0% !important;
+  background-color: gold;
+
+}
+.subcontainer_input_Money{
+  padding: 0% !important;
+  background-color:#dfd7d7;
+
+}
+
+
+.input-nav{
+  text-decoration: none;
+  background-color: transparent;
+  margin: 0%;
+  
+}
+
