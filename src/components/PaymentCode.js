@@ -1,15 +1,13 @@
 import React from 'react'
 
-const CodePage = () => {
-
+const PaymentCode = () => {
   return (
     <div>
       <input type="text" />
     </div>
-
   )
 }
 
 
 
-export default CodePage
+export default PaymentCode
