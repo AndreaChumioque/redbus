@@ -1,22 +1,27 @@
-.container_input{
-  /* background-color: #eee7e7; */
-  margin-top: 2% !important;
-}
-
-.subcontainer_input_CodePage{
-  padding: 0% !important;
-  background-color: gold;
-}
-
-.subcontainer_input_Money{
-  padding: 0% !important;
-  background-color:#dfd7d7;
-}
-
-.input-nav{
-  text-decoration: none;
-  background-color: transparent;
-  margin: 0%;
+.subcontainer_input_PaymentCode{
+  background-color: #e0aa00;
+  height: 10vh;
+  
 
 }
+.subcontainer_input_MoneyInput{
+  background-color:#f6f4f4;
+  height: 10vh;
 
+  
+}
+
+#payment-info {
+  text-align: center;
+  
+}
+
+#payment-info input {
+  border: none;
+  background: transparent;
+}
+
+#payment-info input:focus {
+  outline: 0;
+  border-bottom: 2px solid grey;
+}
