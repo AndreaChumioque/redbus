@@ -1,15 +1,16 @@
- import React from 'react'
+import React from 'react'
 
 
-const Clock =(date) => (
+const Clock = (date) => (
 
 
-  <div>
-    <p>Pedido expirable a </p>
+  <div className=' col-4 col-md-4 container_clock rounded-right'>
+    <img className='clock float-left' src="https://image.flaticon.com/icons/svg/19/19851.svg" alt="" />
+    <p className='text-center'>Tu orden expirará </p>
   </div>
 )
 
-  
+
 
 //   <div>
 //     <p> Su pedido expira</p>
@@ -19,4 +20,4 @@ const Clock =(date) => (
 
 //   setInterval(date, 1000);
 
- export default Clock
+export default Clock

@@ -1,19 +1,29 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Helpers */
+.text-white {
+  color: #fff;
+}
+
 .subcontainer_input_PaymentCode{
   background-color: #e0aa00;
-  height: 10vh;
+  color: #fff;
   
-
 }
 .subcontainer_input_MoneyInput{
   background-color:#f6f4f4;
-  height: 10vh;
+  height: 12vh;
 
   
 }
 
 #payment-info {
   text-align: center;
-  
+  /* border-radius: 5px;
+  overflow: hidden;
+  height: 10vh; */
 }
 
 #payment-info input {
@@ -23,5 +33,14 @@
 
 #payment-info input:focus {
   outline: 0;
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid #fff;
+}
+
+.container_clock{
+
+  background-color: hsl(67, 86%, 80%);
+}
+.clock{
+  width: 3.5vh;
+
 }

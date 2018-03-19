@@ -5,16 +5,24 @@ import Clock from './Clock'
 
 
 
-const TabContent = ({ activeTab, id, content }) => (
-  <div className={activeTab === id ? 'tab-pane fade show active' : 'tab-pane fade' } id={id} role="tabpanel">
-  
-    <div id="payment-info" className="d-flex align-items-center">
+const TabContent = ({ defaultTab, id }) => (
+  <div className={defaultTab === id ? 'tab-pane fade show active' : 'tab-pane fade' } id={id} role="tabpanel">
+    <div id="payment-info" className="row rounded">
       <PaymentCode />
       <MoneyInput />
       {/* <Clock date={getHours()}/> */}
       <Clock/>
     </div>
-    <p> {content}</p>
+    <p>Selecciona dónde quieres pagar:</p>
+    <div>
+      {/* Carrusel */}
+    </div>
+    <p>Instrucciones de pago</p>
+    <p>Indica que vas a realizar un pago a la empresa PAGOEFECTIVO.</p>
+    <p>Indica el Código CIP: 9125682 y el importe a pagar en soles.</p>
+    <a className="btn btn-danger w-100 text-white">
+      {id === 'internet' ? 'Ir a banca por internet' : 'Encuentra tu punto de pago'}
+    </a>
   </div>
 )
 
