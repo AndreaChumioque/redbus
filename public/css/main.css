@@ -7,19 +7,46 @@
   color: #fff;
 }
 
+/* End Helpers */
+
+/* Tabs */
+.nav-tabs {
+  border-bottom: 1px solid rgba(224, 170, 0, 0.48);
+}
+
+.nav-tabs .nav-link {
+  color: #5A5854;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #e0aa00;
+  border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) #fff;
+  font-weight: 700;
+}
+
+/* Tab Content */
+
+.tab-pane {
+  color: #5A5854;
+}
+
 .subcontainer_input_PaymentCode{
   background-color: #e0aa00;
   color: #fff;
 }
 .subcontainer_input_MoneyInput{
   background-color:#f6f4f4;
+  color: #211916;
 }
 
 #payment-info {
   text-align: center;
-  /* border-radius: 5px;
+  border-radius: 5px;
   overflow: hidden;
-  height: 10vh; */
 }
 
 #payment-info input {

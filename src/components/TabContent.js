@@ -4,7 +4,7 @@ import MoneyInput from './MoneyInput'
 
 const TabContent = ({ defaultTab, id }) => (
   <div className={defaultTab === id ? 'tab-pane fade show active' : 'tab-pane fade' } id={id} role="tabpanel">
-    <div id="payment-info" className="">
+    <div id="payment-info" className="d-flex align-items-center">
       <PaymentCode />
       <MoneyInput />
     </div>
