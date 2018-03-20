@@ -7,7 +7,7 @@ import Clock from './Clock'
 
 const TabContent = ({ defaultTab, id }) => (
   <div className={defaultTab === id ? 'tab-pane fade show active' : 'tab-pane fade' } id={id} role="tabpanel">
-    <div id="payment-info" className="row rounded">
+    <div id="payment-info" className="row rounded d-flex align-items-center">
       <PaymentCode />
       <MoneyInput />
       {/* <Clock date={getHours()}/> */}
