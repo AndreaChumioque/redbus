@@ -13,11 +13,6 @@
   color: #fff;
 }
 
-.instructions {
-  font-size: 0.75em; 
-  font-weight: 300;
-}
-
 .subtitle {
   color: #e0aa00;
 }
@@ -70,6 +65,8 @@ label:focus,
 /* Tab Content */
 .tab-pane {
   color: #5A5854;
+  font-size: 0.75em; 
+  font-weight: 300;
 }
 
 .subcontainer_input_PaymentCode{
@@ -137,11 +134,7 @@ label:focus,
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
-  height: 60px;
-}
-
-#payment-info div {
-  height: 100%;
+  
 }
 
 #payment-info .form-control {
@@ -161,13 +154,12 @@ label:focus,
 }
 
 .subcontainer_input_PaymentCode p {
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 
 .subcontainer_input_PaymentCode #code {
-  font-size: 1.3em;
+  font-size: 1.75em;
   font-weight: 600;
-  line-height: 1.3em;
   color: #fff;
 }
 
@@ -180,7 +172,7 @@ label:focus,
 .subcontainer_input_MoneyInput {
   background-color:#f6f4f4;
   color: #211916;
-  font-size: 0.65em;
+  font-size: 0.9em;
 }
 
 .subcontainer_input_MoneyInput input {

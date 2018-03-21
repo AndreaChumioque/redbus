@@ -8,16 +8,17 @@ import MultipleItems from './MultipleItems'
 
 const TabContent = ({ defaultTab, id }) => (
   <div className={defaultTab === id ? 'tab-pane fade show active' : 'tab-pane fade' } id={id} role="tabpanel">
-    <div id="payment-info" className="row rounded d-flex align-items-center">
-      <PaymentCode />
+    <div id="payment-info" className="d-flex flex-row">
+      <PaymentCode code={paymentCode} />
       <MoneyInput />
       <Clock/>
     </div>
-    <div className="instructions mt-3">
-      <p>Selecciona dónde quieres pagar:</p>
+
+      <p className="mt-3">Selecciona dónde quieres pagar:</p>
       <div>
       <MultipleItems/>
       </div>
+    <div className="instructions mt-3">
       <p>Puedes pagar desde la Web o App móvil del Banco</p>
       <h6 className="subtitle">Instrucciones de pago</h6>
       <p>Indica que vas a realizar un pago a la empresa PAGOEFECTIVO.</p>
@@ -26,7 +27,7 @@ const TabContent = ({ defaultTab, id }) => (
     <a
       id="btn-payment"
       className="btn w-100 text-white"
-      href={id === 'cash' ?  "https://ubicanos.pagoefectivo.pe/#/?tienda=[idServicio]&moneda=1&monto=100.00&ubicame=true" : "#internet"}
+      href={id === 'internet' ? "#internet" : "https://ubicanos.pagoefectivo.pe/#/?tienda=[idServicio]&moneda=1&monto=100.00&ubicame=true"}
     >
       <img src="assets/icon-arrow.svg" width="24" alt="Go to"/> &nbsp;
       {id === 'internet' ? 'Ir a banca por internet' : 'Encuentra tu punto de pago'}
