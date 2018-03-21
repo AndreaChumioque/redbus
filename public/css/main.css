@@ -7,11 +7,38 @@
   color: #fff;
 }
 
+.instructions {
+  font-size: 0.75em; 
+  font-weight: 300;
+}
+
+.subtitle {
+  color: #e0aa00;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
 /* End Helpers */
 
 /* Tabs */
 .nav-tabs {
   border-bottom: 1px solid rgba(224, 170, 0, 0.48);
+  font-size: 0.75em;
 }
 
 .nav-tabs .nav-link {
@@ -28,8 +55,13 @@
   font-weight: 700;
 }
 
-/* Tab Content */
+@media (min-width:768px) {
+  .nav-tabs {
+    font-size: 0.9em;
+  }  
+}
 
+/* Tab Content */
 .tab-pane {
   color: #5A5854;
 }
@@ -38,6 +70,22 @@
   background-color: #e0aa00;
   color: #fff;
 }
+
+.subcontainer_input_PaymentCode p{
+  font-size: 0.8em;
+}
+
+.subcontainer_input_PaymentCode input{
+  font-size: 2.125em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.subcontainer_input_PaymentCode input:focus{
+  color: #fff;
+  outline-color: none;
+}
+
 .subcontainer_input_MoneyInput{
   background-color:#f6f4f4;
   color: #211916;
@@ -49,12 +97,19 @@
   overflow: hidden;
 }
 
-#payment-info input {
+#payment-info .form-control {
   border: none;
   background: transparent;
+  border-radius: 0;
 }
 
-#payment-info input:focus {
-  outline: 0;
+#payment-info .form-control:focus {
+  outline: none;
   border-bottom: 2px solid #fff;
+}
+
+#btn-payment {
+  background-color: #B9373E;
+  border-radius: 15px;
+  font-size: 0.9em;
 }
