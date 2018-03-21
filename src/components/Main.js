@@ -1,32 +1,35 @@
 import React from 'react'
-import  CodePage  from './CodePage'
-import Money from './Money'
+import TabContent from './TabContent'
 
+const data = {
+  tabs: [
+    {id: 'internet', content: 'hola'},
+    {id: 'cash', content: 'hola2'}
+  ],
+  paymentCode: '',
+  totalAmount: 0,
+  defaultTab: 'internet'
+}
 
 const Main = () => {
-
   return (
-    <section className='container-fluid'>
-      <nav>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Banca por Internet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pagar en efectivo</a>
-          </li>
-        </ul>
-      </nav>
-      <div className=' flex container_input row border-0 rounded'>
-        <CodePage />
-        <Money />
-        <div clasName=' align-center subcontainer_input col-4 col-md-4'>
-          <p clasName='border'>Texto</p>
-        </div>
+    <section className="container">
+      <ul className="nav nav-tabs px-3">
+        <li className="nav-item">
+          <a className="nav-link py-1 active" id="internet-tab" data-toggle="tab" href="#internet" role="tab" aria-selected="true">Banca por Internet</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link py-1" id="cash-tab" data-toggle="tab" href="#cash" role="tab" aria-controls="profile" aria-selected="false">Pagar en efectivo</a>
+        </li>
+      </ul>
+      <div className="tab-content p-3">
+        {data.tabs.map(tab =>
+          <TabContent key={tab.id} {...tab} defaultTab={data.defaultTab} />
+        )}
       </div>
     </section>
   )
 
 }
 
-export default Main;
+export default Main

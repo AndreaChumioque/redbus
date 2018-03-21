@@ -1,24 +1,144 @@
-.container_input{
-  /* background-color: #eee7e7; */
-  margin-top: 2% !important;
-
-}
-.subcontainer_input_CodePage{
-  padding: 0% !important;
-  background-color: gold;
-
-}
-.subcontainer_input_Money{
-  padding: 0% !important;
-  background-color:#dfd7d7;
-
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* Helpers */
+.text-white {
+  color: #fff;
+}
 
-.input-nav{
-  text-decoration: none;
-  background-color: transparent;
-  margin: 0%;
+.instructions {
+  font-size: 0.75em; 
+  font-weight: 300;
+}
+
+.subtitle {
+  color: #e0aa00;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+/* End Helpers */
+
+/* Tabs */
+.nav-tabs {
+  border-bottom: 1px solid rgba(224, 170, 0, 0.48);
+  font-size: 0.75em;
+}
+
+.nav-tabs .nav-link {
+  color: #5A5854;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #e0aa00;
+  border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) #fff;
+  font-weight: 700;
+}
+
+@media (min-width:768px) {
+  .nav-tabs {
+    font-size: 0.9em;
+  }  
+}
+
+/* Tab Content */
+.tab-pane {
+  color: #5A5854;
+}
+
+.subcontainer_input_PaymentCode{
+  background-color: #e0aa00;
+  color: #fff;
   
+}
+
+.subcontainer_input_PaymentCode p{
+  font-size: 0.8em;
+}
+
+.subcontainer_input_PaymentCode input{
+  font-size: 2.125em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.subcontainer_input_PaymentCode input:focus{
+  color: #fff;
+  outline-color: none;
+}
+
+.subcontainer_input_MoneyInput{
+  background-color:#f6f4f4;
+  height: 17vh;
+
+  
+  color: #211916;
+}
+
+#payment-info {
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#payment-info .form-control {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+}
+
+#payment-info .form-control:focus {
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
+
+.container_clock{
+
+  background-color: hsl(67, 86%, 80%);
+  height: 17vh;
+}
+.clock{
+  width: 3.5vh;
+
+}
+/*footer*/
+
+
+/* .logoFooter{
+
+  margin-top: -3vh;
+}   */
+
+/* .print {
+  margin-top: 3vh;
+}
+.mail{
+  margin-top: 3vh;
+} */
+ /* 
+containerPrint{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #e0aa00;
 }
 
