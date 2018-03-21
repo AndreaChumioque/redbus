@@ -13,7 +13,7 @@ const data = {
 
 const Main = () => {
   return (
-    <section className="container">
+    <section className="container px-0">
       <ul className="nav nav-tabs px-3">
         <li className="nav-item">
           <a className="nav-link py-1 active" id="internet-tab" data-toggle="tab" href="#internet" role="tab" aria-selected="true">Banca por Internet</a>
@@ -24,7 +24,7 @@ const Main = () => {
       </ul>
       <div className="tab-content p-3">
         {data.tabs.map(tab =>
-          <TabContent key={tab.id} {...tab} defaultTab={data.defaultTab} />
+          <TabContent key={tab.id} {...tab} {...data} />
         )}
       </div>
     </section>

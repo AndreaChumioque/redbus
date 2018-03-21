@@ -2,6 +2,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 /* Helpers */
 .text-white {
   color: #fff;
@@ -121,24 +127,74 @@ label:focus,
   width: 3.5vh;
 
 }
-/*footer*/
 
-
-/* .logoFooter{
-
-  margin-top: -3vh;
-}   */
-
-/* .print {
-  margin-top: 3vh;
-}
-.mail{
-  margin-top: 3vh;
-} */
- /* 
-containerPrint{
-  width: 200px;
-  height: 200px;
-  border: 1px solid #e0aa00;
+/* Tab Content */
+.tab-pane {
+  color: #5A5854;
 }
 
+#payment-info {
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 60px;
+}
+
+#payment-info div {
+  height: 100%;
+}
+
+#payment-info .form-control {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+}
+
+#payment-info .form-control:focus {
+  border-color: #fff;
+} 
+
+.subcontainer_input_PaymentCode {
+  background-color: #e0aa00;
+  color: #fff;
+}
+
+.subcontainer_input_PaymentCode p {
+  font-size: 0.5em;
+}
+
+.subcontainer_input_PaymentCode #code {
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.3em;
+  color: #fff;
+}
+
+@media (min-width:768px) {
+  .subcontainer_input_PaymentCode p {
+    font-size: 0.8em;
+  }
+}
+
+.subcontainer_input_MoneyInput {
+  background-color:#f6f4f4;
+  color: #211916;
+  font-size: 0.65em;
+}
+
+.subcontainer_input_MoneyInput input {
+  font-size: inherit;
+}
+
+#btn-payment {
+  background-color: #B9373E;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
+
+/*Carousel*/
+
+.agentes{
+  width: 120px;
+}

@@ -11,8 +11,6 @@ const Footer = () => (
         <img className="m-3" src="assets/logo-pagoefectivo.svg" alt="Redbus - PagoEfectivo" width="86px" />
       </li>
     </ul>
-
-
   </footer>
 )
 

@@ -2,7 +2,7 @@ import React from 'react'
 import PaymentCode  from './PaymentCode'
 import MoneyInput from './MoneyInput'
 import Clock from './Clock'
-import Carousel from './Carousel'
+import MultipleItems from './MultipleItems'
 
 
 
@@ -13,10 +13,10 @@ const TabContent = ({ defaultTab, id }) => (
       <MoneyInput />
       <Clock/>
     </div>
-    <div className="instructions">
+    <div className="instructions mt-3">
       <p>Selecciona dónde quieres pagar:</p>
       <div>
-      < Carousel />
+      <MultipleItems/>
       </div>
       <p>Puedes pagar desde la Web o App móvil del Banco</p>
       <h6 className="subtitle">Instrucciones de pago</h6>
