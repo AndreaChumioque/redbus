@@ -2,6 +2,12 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 /* Helpers */
 .text-white {
   color: #fff;
@@ -14,23 +20,6 @@
 
 .subtitle {
   color: #e0aa00;
-}
-
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
-input:focus,
-button:focus,
-button:active,
-button:hover,
-label:focus,
-.btn:active,
-.btn.active
-{
-    outline:0px !important;
-    -webkit-appearance:none;
 }
 
 /* End Helpers */
@@ -66,18 +55,19 @@ label:focus,
   color: #5A5854;
 }
 
-.subcontainer_input_PaymentCode{
+.subcontainer_input_PaymentCode {
   background-color: #e0aa00;
   color: #fff;
 }
 
-.subcontainer_input_PaymentCode p{
-  font-size: 0.8em;
+.subcontainer_input_PaymentCode p {
+  font-size: 0.5em;
 }
 
-.subcontainer_input_PaymentCode input{
-  font-size: 2.125em;
+.subcontainer_input_PaymentCode input {
+  font-size: 1.3em;
   font-weight: 600;
+  line-height: 1.3em;
   color: #fff;
 }
 
@@ -86,26 +76,38 @@ label:focus,
   outline-color: none;
 }
 
-.subcontainer_input_MoneyInput{
+@media (min-width:768px) {
+  .subcontainer_input_PaymentCode p {
+    font-size: 0.8em;
+  }
+}
+
+.subcontainer_input_MoneyInput {
   background-color:#f6f4f4;
   color: #211916;
+  font-size: 0.65em;
+}
+
+.subcontainer_input_MoneyInput input {
+  font-size: inherit;
 }
 
 #payment-info {
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
+  height: 50px;
 }
 
 #payment-info .form-control {
   border: none;
   background: transparent;
   border-radius: 0;
+  border-bottom: 2px solid transparent;
 }
 
 #payment-info .form-control:focus {
-  outline: none;
-  border-bottom: 2px solid #fff;
+  border-color: #fff;
 }
 
 #btn-payment {
