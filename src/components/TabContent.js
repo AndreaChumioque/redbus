@@ -2,13 +2,13 @@ import React from 'react'
 import PaymentCode  from './PaymentCode'
 import MoneyInput from './MoneyInput'
 
-const TabContent = ({ defaultTab, id }) => (
+const TabContent = ({ defaultTab, id , paymentCode}) => (
   <div className={defaultTab === id ? 'tab-pane fade show active' : 'tab-pane fade' } id={id} role="tabpanel">
     <div id="payment-info" className="d-flex align-items-center">
-      <PaymentCode />
+      <PaymentCode code={paymentCode} />
       <MoneyInput />
     </div>
-    <div className="instructions">
+    <div className="instructions mt-3">
       <p>Selecciona dónde quieres pagar:</p>
       <div>
         {/* Carrusel */}

@@ -55,6 +55,28 @@
   color: #5A5854;
 }
 
+#payment-info {
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 60px;
+}
+
+#payment-info div {
+  height: 100%;
+}
+
+#payment-info .form-control {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+}
+
+#payment-info .form-control:focus {
+  border-color: #fff;
+} 
+
 .subcontainer_input_PaymentCode {
   background-color: #e0aa00;
   color: #fff;
@@ -64,16 +86,11 @@
   font-size: 0.5em;
 }
 
-.subcontainer_input_PaymentCode input {
+.subcontainer_input_PaymentCode #code {
   font-size: 1.3em;
   font-weight: 600;
   line-height: 1.3em;
   color: #fff;
-}
-
-.subcontainer_input_PaymentCode input:focus{
-  color: #fff;
-  outline-color: none;
 }
 
 @media (min-width:768px) {
@@ -90,24 +107,6 @@
 
 .subcontainer_input_MoneyInput input {
   font-size: inherit;
-}
-
-#payment-info {
-  text-align: center;
-  border-radius: 5px;
-  overflow: hidden;
-  height: 50px;
-}
-
-#payment-info .form-control {
-  border: none;
-  background: transparent;
-  border-radius: 0;
-  border-bottom: 2px solid transparent;
-}
-
-#payment-info .form-control:focus {
-  border-color: #fff;
 }
 
 #btn-payment {

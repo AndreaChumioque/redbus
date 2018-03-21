@@ -3,10 +3,10 @@ import TabContent from './TabContent'
 
 const data = {
   tabs: [
-    {id: 'internet', content: 'hola'},
-    {id: 'cash', content: 'hola2'}
+    {id: 'internet'},
+    {id: 'cash'}
   ],
-  paymentCode: '',
+  paymentCode: '9125682',
   totalAmount: 0,
   defaultTab: 'internet'
 }
@@ -24,7 +24,7 @@ const Main = () => {
       </ul>
       <div className="tab-content p-3">
         {data.tabs.map(tab =>
-          <TabContent key={tab.id} {...tab} defaultTab={data.defaultTab} />
+          <TabContent key={tab.id} {...tab} {...data} />
         )}
       </div>
     </section>
