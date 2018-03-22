@@ -149,3 +149,28 @@
 .slick-next {
   right: -10px !important;
 }
+
+/* footer*/
+.containerFooter{
+  font-size: 12px;
+}
+
+/*Print*/
+.intructionPrint{
+  padding-right: 1vh;
+}
+
+.containerPrint{
+  display:inline-block;
+  border:1px solid #e0aa00 !important;
+  height: 6vh;
+  margin-bottom: 1vh;
+   width: 8vh;
+}
+
+/*Email*/
+.MailContacto{
+  color:#e0aa00;
+  font-weight: 800;
+}
+

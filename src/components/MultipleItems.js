@@ -19,7 +19,7 @@ const MultipleItems = ({banks, setSelectedBank, selectedBank}) => (
   <div>
     <Slider {...settings}>
       {banks.map(bank =>
-        <div className="p-3"
+        <div className="p-2 p-md-3"
           key={bank.name}
           onClick={() => setSelectedBank(bank)}
         >
