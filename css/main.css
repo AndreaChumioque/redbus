@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.woff');
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Helpers */
+.text-white {
+  color: #fff;
+}
+
+.subtitle {
+  color: #e0aa00;
+}
+
+/* End Helpers */
+
+/* Tabs */
+.nav-tabs {
+  border-bottom: 1px solid rgba(224, 170, 0, 0.48);
+  font-size: 0.75em;
+}
+
+.nav-tabs .nav-link {
+  color: #5A5854;
+  cursor: pointer;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link.active:hover {
+  border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #e0aa00;
+  border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) #fff;
+  font-weight: 700;
+}
+
+@media (min-width:768px) {
+  .nav-tabs {
+    font-size: 0.9em;
+  }  
+}
+
+/* Tab Content */
+.tab-pane {
+  color: #5A5854;
+  font-size: 0.75em; 
+  font-weight: 300;
+}
+
+.subcontainer_input_PaymentCode{
+  background-color: #e0aa00;
+  color: #fff; 
+}
+
+#payment-info {
+  text-align: center;
+}
+
+#payment-info .form-control {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+}
+
+#payment-info .form-control:focus {
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
+
+.subcontainer_input_PaymentCode p{
+  font-size: 0.8em;
+}
+
+.subcontainer_input_PaymentCode #code {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+}
+
+.subcontainer_input_PaymentCode input:focus{
+  color: #fff;
+  outline-color: none;
+}
+
+.subcontainer_input_MoneyInput{
+  background-color:#f6f4f4;
+  height: 17vh; 
+  color: #211916;
+}
+
+.container_clock{
+  background-color: #FFD87F;
+  font-size: 0.8em;
+}
+
+#btn-payment {
+  background-color: #B9373E;
+  border-radius: 15px;
+  font-size: 1.15em;
+}
+
+#remainingTime {
+  font-size: 1.2em;
+}
+
+/*Carousel*/
+
+.agentes{
+  width: 120px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'icomoon' !important;
+  font-size: 25px !important;
+  line-height: 1;
+  color: #E0AA00 !important;
+}   
+
+.slick-prev:before {
+  content: "\e901" !important;
+}
+
+[dir="rtl"] .slick-prev:before {
+  content: "\e901" !important;
+}
+
+.slick-next:before {
+  content: "\e900" !important;
+}
+
+[dir="rtl"] .slick-next:before {
+  content: "\e900" !important;
+}
+
+.slick-prev {
+  left: -10px !important;
+}
+
+.slick-next {
+  right: -10px !important;
+}
+
+/* footer*/
+.containerFooter{
+  font-size: 12px;
+}
+
+/*Print*/
+.intructionPrint{
+  padding-right: 1vh;
+}
+
+.containerPrint{
+  display:inline-block;
+  border:1px solid #e0aa00 !important;
+  height: 6vh;
+  margin-bottom: 1vh;
+   width: 8vh;
+}
+
+/*Email*/
+.MailContacto{
+  color:#e0aa00;
+  font-weight: 800;
+}
+
