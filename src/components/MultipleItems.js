@@ -23,7 +23,7 @@ const MultipleItems = ({banks, setSelectedBank, selectedBank}) => (
           key={bank.name}
           onClick={() => setSelectedBank(bank)}
         >
-          <img
+          <img className="img-fluid"
             src={bank.image}
             alt={bank.name}
             style={bank.name === selectedBank.name ? {...styleSelected, cursor: 'pointer'} : {cursor: 'pointer', border: '2px solid #FFD87F'}}

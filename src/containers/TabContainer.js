@@ -1,20 +1,16 @@
 import { connect } from 'react-redux' 
 import { bindActionCreators } from 'redux'
-import { selectBank } from '../actions'
-import TabContent from '../components/TabContent'
+import { changeTab } from '../actions'
+import Tab from '../components/Tab'
 
 const mapStateToProps = (state) => ({
-  activeTab: state.info.activeTab,
-  paymentCode: state.info.paymentCode,
-  content: state.tabs[state.info.activeTab],
-  selectedBank: state.selectedBank
+  activeTab: state.info.activeTab
 })
-
 
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
-    setSelectedBank: selectBank
+    setActiveTab: changeTab
   }, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TabContent)
+export default connect(mapStateToProps, mapDispatchToProps)(Tab)

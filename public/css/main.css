@@ -38,7 +38,7 @@
   border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) transparent;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .nav-link:active {
   color: #e0aa00;
   border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) #fff;
   font-weight: 700;
