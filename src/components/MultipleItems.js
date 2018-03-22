@@ -7,8 +7,6 @@ import {connect}from 'react-redux'
 const settings = {
   dots: true,
   infinite: true,
-
-  
   speed: 100,
   slidesToShow: 4,
   slidesToScroll: 3
@@ -46,23 +44,23 @@ const Banks = [
 const MultipleItems = (obj,setting,onclick) => (
 
 
-  <div>
-    {console.log({...settings})}
-    <Slider {...settings}>
-        {Banks.map((obj, i) =>
-          <div >
-            <img  onclick={()=>props.dispatch({
-              type:'TEXT_BANCK'
-              })}src={obj.image} alt=""width='20px' />
-            <p className='text-center  agentes'>{obj.parrafo}</p>
-          </div>
+   <div>
+  {/* //   {console.log({...settings})}
+  //   <Slider {...settings}>
+  //       {Banks.map((obj, i) =>
+  //         <div >
+  //           <img  onclick={()=>props.dispatch({
+  //             type:'TEXT_BANCK'
+  //             })}src={obj.image} alt=""width='20px' />
+  //           <p className='text-center  agentes'>{obj.parrafo}</p>
+  //         </div>
 
-        )}
+  //       )}
 
-    </Slider>
-    <span>{} </span>
- </div>
-)
+//     </Slider>
+//     <span>{} </span> */}
+  </div>
+ )
 const mapStateToProps=(state)=>({
 
 })

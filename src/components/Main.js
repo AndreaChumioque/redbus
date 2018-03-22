@@ -26,6 +26,7 @@ const Main = () => {
         {data.tabs.map(tab =>
           <TabContent key={tab.id} {...tab} {...data} />
         )}
+         
       </div>
     </section>
   )

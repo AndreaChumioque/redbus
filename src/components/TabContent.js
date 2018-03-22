@@ -9,7 +9,7 @@ import MultipleItems from './MultipleItems'
 const TabContent = ({ defaultTab, id }) => (
   <div className={defaultTab === id ? 'tab-pane fade show active' : 'tab-pane fade' } id={id} role="tabpanel">
     <div id="payment-info" className="d-flex flex-row">
-      <PaymentCode code={paymentCode} />
+      {/* <PaymentCode code={paymentCode} /> */}
       <MoneyInput />
       <Clock/>
     </div>
