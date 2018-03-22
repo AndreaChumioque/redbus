@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.woff');
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
 }
@@ -52,57 +57,95 @@
   font-weight: 300;
 }
 
+.subcontainer_input_PaymentCode{
+  background-color: #e0aa00;
+  color: #fff; 
+}
+
 #payment-info {
   text-align: center;
-  border-radius: 5px;
-  overflow: hidden;
-  
 }
 
 #payment-info .form-control {
   border: none;
   background: transparent;
   border-radius: 0;
-  border-bottom: 2px solid transparent;
 }
 
 #payment-info .form-control:focus {
-  border-color: #fff;
-} 
-
-.subcontainer_input_PaymentCode {
-  background-color: #e0aa00;
-  color: #fff;
+  outline: none;
+  border-bottom: 2px solid #fff;
 }
 
-.subcontainer_input_PaymentCode p {
-  font-size: 0.75em;
+.subcontainer_input_PaymentCode p{
+  font-size: 0.8em;
 }
 
 .subcontainer_input_PaymentCode #code {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 600;
   color: #fff;
 }
 
-@media (min-width:768px) {
-  .subcontainer_input_PaymentCode p {
-    font-size: 0.8em;
-  }
+.subcontainer_input_PaymentCode input:focus{
+  color: #fff;
+  outline-color: none;
 }
 
-.subcontainer_input_MoneyInput {
+.subcontainer_input_MoneyInput{
   background-color:#f6f4f4;
+  height: 17vh; 
   color: #211916;
-  font-size: 0.9em;
 }
 
-.subcontainer_input_MoneyInput input {
-  font-size: inherit;
+.container_clock{
+  background-color: #FFD87F;
+  font-size: 0.8em;
 }
 
 #btn-payment {
   background-color: #B9373E;
   border-radius: 15px;
-  font-size: 1.1em;
+  font-size: 1.15em;
+}
+
+#remainingTime {
+  font-size: 1.2em;
+}
+
+/*Carousel*/
+
+.agentes{
+  width: 120px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'icomoon' !important;
+  font-size: 25px !important;
+  line-height: 1;
+  color: #E0AA00 !important;
+}   
+
+.slick-prev:before {
+  content: "\e901" !important;
+}
+
+[dir="rtl"] .slick-prev:before {
+  content: "\e901" !important;
+}
+
+.slick-next:before {
+  content: "\e900" !important;
+}
+
+[dir="rtl"] .slick-next:before {
+  content: "\e900" !important;
+}
+
+.slick-prev {
+  left: -10px !important;
+}
+
+.slick-next {
+  right: -10px !important;
 }
