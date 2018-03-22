@@ -15,8 +15,11 @@ class PrintThisComponent extends Component {
 
     return (
       
-        <li className="text-center print nav-item col-md-4 col-12 aling-center">Instrucciones vía
-        <a onClick={() => window.print()} className='containerPrint ' href=""><img src="../assets/icon-print.svg" alt="Print" width="25px" /></a>
+        <li className="text-center print nav-item col-md-4 col-12 d-flex flex-row justify-content-center">
+          <span className='intructionPrint'>Instrucciones vía</span> 
+          <a onClick={() => window.print()} className='d-flex align-items-center justify-content-center containerPrint  rounded content-center' href="">
+            <img src="../assets/icon-print.svg" alt="Print" width="25px" />
+          </a>
         </li>
      
 

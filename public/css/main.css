@@ -190,3 +190,23 @@ label:focus,
 .agentes{
   width: 120px;
 }
+/*Print*/
+
+.intructionPrint{
+  padding-right: 1vh;
+}
+
+.containerPrint{
+  display:inline-block;
+  border:1px solid #e0aa00 !important;
+  height: 6vh;
+  margin-bottom: 1vh;
+   width: 8vh;
+}
+
+/*Email*/
+
+.MailContacto{
+  color:#e0aa00;
+  font-weight: 800;
+}
