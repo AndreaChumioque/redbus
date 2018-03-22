@@ -190,6 +190,12 @@ label:focus,
 .agentes{
   width: 120px;
 }
+
+/* footer*/
+.container{
+  font-size: 12px;
+}
+
 /*Print*/
 
 .intructionPrint{
@@ -210,3 +216,4 @@ label:focus,
   color:#e0aa00;
   font-weight: 800;
 }
+
