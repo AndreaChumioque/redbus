@@ -7,8 +7,36 @@ const settings = {
   dots: false,
   infinite: true,
   speed: 100,
-  slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [{
+    breakpoint: 992,
+    settings: {
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: true,
+      speed: 100
+    }
+  }, {
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: true,
+      speed: 100
+    }
+  }, {
+    breakpoint: 576,
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      infinite: true,
+      speed: 100
+    }
+  }]
 };
 
 const styleSelected = {

@@ -20,7 +20,7 @@ export default function () {
         {name: 'fullcarga', text:'Agentes y Bodegas Agencias', image: 'assets/logo-fullcarga.png', instructions: ['Indica que vas a realizar un pago a la empresa PAGOEFECTIVO. Indica el Código CIP: 9125682 y el importe a pagar en Soles.'], disclaimer: ['Encuentra a FullCarga en Bodegas, Farmacias, cabinas de Internet y Locutorios.']},
         {name: 'scotiabank', text: 'Agencias', image: 'assets/logo-scotia.svg', instructions: ['Indica que vas a realizar un pago a la empresa PAGOEFECTIVO. Indica el Código CIP: 9125682 y el importe a pagar en Soles.'], disclaimer: []},
         {name: 'western', text: 'Agentes y Bodegas Agencias', image: 'assets/logo-wu.svg', instructions: ['Indica que vas a realizar un pago a la empresa PAGOEFECTIVO. Indica el Código CIP: 9125682 y el importe a pagar en Soles.'], disclaimer: []},
-        {name: 'kasnet', text:'Agentes', image: 'assets/logo-kasnet.svg', instructions: ['Indica que vas a realizar un pago a la empresa PAGOEFECTIVO. Indica el Código CIP: 9125682 y el importe a pagar en Soles.'], disclaimer: []}
+        {name: 'kasnet', text:'Agentes', image: 'assets/logo-kasnet.png', instructions: ['Indica que vas a realizar un pago a la empresa PAGOEFECTIVO. Indica el Código CIP: 9125682 y el importe a pagar en Soles.'], disclaimer: []}
       ],
       link: 'https://ubicanos.pagoefectivo.pe/#/?tienda=[idServicio]&moneda=1&monto=100.00&ubicame=true',
       buttonText: 'Encuentra tu punto de pago'
