@@ -4,11 +4,12 @@ import MoneyInput from './MoneyInput'
 import Clock from './Clock'
 import MultipleItems from './MultipleItems'
 
-const TabContent = ({ paymentCode, content, selectedBank, setSelectedBank}) => (
+const TabContent = ({ paymentCode, content, selectedBank, setSelectedBank, activeTab }) => (
   <div className="tab-pane show active">
+  {console.log(activeTab)}
     <div id="payment-info" className="d-flex flex-row">
       <PaymentCode code={paymentCode} />
-      <MoneyInput />
+      <MoneyInput/>
       <Clock/>
     </div>
     <p className="mt-3">Selecciona dónde quieres pagar:</p>
@@ -17,10 +18,9 @@ const TabContent = ({ paymentCode, content, selectedBank, setSelectedBank}) => (
       <p>Puedes pagar desde la Web o App móvil del Banco</p>
       <h6 className="subtitle">Instrucciones de pago</h6>
       {selectedBank.instructions.map((p, i) =>
-        <p key={i}>{p}</p>
+        <p key={i}>{activeTab === 'internet' ? <span className="instruction-num">{i + 1}</span> : null} {p}</p>
       )}
-      {/* {console.log} */}
-      {selectedBank.disclaimer !== [] ? selectedBank.disclaimer.map(text => <p>{text}</p>) : null}
+      {selectedBank.disclaimer !== [] ? selectedBank.disclaimer.map(text => <p key={text}><span className="disclaimer">(*)</span>{text} </p>) : null}
     </div>
     <a
       id="btn-payment"

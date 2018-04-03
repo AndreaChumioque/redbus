@@ -7,12 +7,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.form-control:focus {
-  border-color: inherit;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
 /* Helpers */
 .text-white {
   color: #fff;
@@ -84,13 +78,8 @@
 
 .subcontainer_input_PaymentCode #code {
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
-}
-
-.subcontainer_input_PaymentCode input:focus{
-  color: #fff;
-  outline-color: none;
 }
 
 .subcontainer_input_MoneyInput{
@@ -102,6 +91,32 @@
 .container_clock{
   background-color: #FFD87F;
   font-size: 0.8em;
+}
+
+#icon-time {
+  width: 20px;
+}
+
+@media (min-width: 768px) {
+  .subcontainer_input_PaymentCode p{
+    font-size: 1em;
+  }
+
+  .subcontainer_input_PaymentCode #code {
+    font-size: 2.75em;
+  }
+
+  .subcontainer_input_MoneyInput{
+    font-size: 1.5em;
+  }
+
+  #icon-time {
+    width: 30px;
+  }
+
+  .subcontainer_input_Time #remainingTime {
+    font-size: 1.5em;
+  }
 }
 
 #btn-payment {
@@ -151,6 +166,23 @@
   right: -10px !important;
 }
 
+/* Instructions */
+.instruction-num {
+  color: #E0AA00;
+  font-weight: 700;
+  border: 1px solid #E0AA00;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.disclaimer {
+  color: #E0AA00;
+  font-weight: 700;
+}
+
 /* footer*/
 .containerFooter{
   font-size: 12px;
@@ -172,6 +204,6 @@
 /*Email*/
 .MailContacto{
   color:#e0aa00;
-  font-weight: 800;
+  font-weight: 700;
 }
 

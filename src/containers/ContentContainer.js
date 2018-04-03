@@ -6,7 +6,8 @@ import TabContent from '../components/TabContent'
 const mapStateToProps = (state) => ({
   paymentCode: state.info.paymentCode,
   content: state.tabs[state.info.activeTab],
-  selectedBank: state.selectedBank
+  selectedBank: state.selectedBank,
+  activeTab: state.info.activeTab
 })
 
 
