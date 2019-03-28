@@ -27,6 +27,8 @@
 .nav-tabs .nav-link {
   color: #5A5854;
   cursor: pointer;
+  outline: none;
+  background-color: transparent;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active:hover {
@@ -34,7 +36,7 @@
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  color: #e0aa00;
+  /* color: #e0aa00; */
   border-color: rgba(224, 170, 0, 0.48) rgba(224, 170, 0, 0.48) #fff;
   font-weight: 700;
 }
